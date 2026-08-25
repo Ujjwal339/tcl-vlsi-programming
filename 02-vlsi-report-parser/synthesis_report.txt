@@ -1,0 +1,4 @@
+Design Name : RISC_V_CORE
+Total Area : 12500
+Dynamic Power : 24.5
+Worst Slack (WNS) : 0.18
