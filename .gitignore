@@ -1,0 +1,9 @@
+# Tcl generated output files
+Design_summary.txt
+Report_analysis.txt
+
+# OS/editor files
+.DS_Store
+*~
+*.swp
+*.swo
