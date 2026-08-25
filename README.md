@@ -12,27 +12,27 @@ tcl-vlsi-programming/
 ├── README.md
 ├── .gitignore
 │
-├── 05-chip-utilization-calculator/
+├── 01-chip-utilization-calculator/
 │   └── chip_utilization.tcl
 │
-├── 06-vlsi-report-parser/
+├── 02-vlsi-report-parser/
 │   ├── vlsi_report_parser.tcl
 │   └── synthesis_report.txt
 │
-├── 07-tcl-tk-gui-calculator/
+├── 03-tcl-tk-gui-calculator/
 │   └── tcl_tk_calculator.tcl
 │
-├── 08-regex-report-analysis/
+├── 04-regex-report-analysis/
 │   ├── regex_report_analysis.tcl
 │   └── lab8_input.txt
 │
-└── 09-logic-gate-simulator/
+└── 05-logic-gate-simulator/
     └── logic_gate_simulator.tcl
 ```
 
 ## Experiments
 
-### 5. Chip Utilization Calculator
+### 1. Chip Utilization Calculator
 
 The script calculates:
 
@@ -54,13 +54,13 @@ This is directly related to VLSI floorplanning, where utilization indicates how 
 Run:
 
 ```bash
-cd 05-chip-utilization-calculator
+cd 01-chip-utilization-calculator
 tclsh chip_utilization.tcl
 ```
 
 ---
 
-### 6. VLSI Report Parser
+### 2. VLSI Report Parser
 
 This script reads a synthesis report and extracts:
 
@@ -80,7 +80,7 @@ The script automatically reports a timing violation when WNS is negative. This f
 Run:
 
 ```bash
-cd 06-vlsi-report-parser
+cd 02-vlsi-report-parser
 tclsh vlsi_report_parser.tcl
 ```
 
@@ -88,7 +88,7 @@ A sample `synthesis_report.txt` is included for testing.
 
 ---
 
-### 7. Tcl/Tk GUI Calculator
+### 3. Tcl/Tk GUI Calculator
 
 A desktop calculator implemented using **Tcl/Tk**.
 
@@ -116,7 +116,7 @@ The original experiment specifically uses four procedures and button commands to
 Run:
 
 ```bash
-cd 07-tcl-tk-gui-calculator
+cd 03-tcl-tk-gui-calculator
 wish tcl_tk_calculator.tcl
 ```
 
@@ -126,7 +126,7 @@ The divide-by-zero handling has been corrected so that the procedure actually re
 
 ---
 
-### 8. Regex-Based VLSI Report Analysis
+### 4. Regex-Based VLSI Report Analysis
 
 This script demonstrates **regular expressions in Tcl** to extract VLSI metrics from a text report.
 
@@ -147,7 +147,7 @@ The original experiment uses regex-based extraction and a 30 mW dynamic-power th
 Run:
 
 ```bash
-cd 08-regex-report-analysis
+cd 04-regex-report-analysis
 tclsh regex_report_analysis.tcl
 ```
 
@@ -157,11 +157,11 @@ The output is generated as:
 Report_analysis.txt
 ```
 
-A sample `lab8_input.txt` is included.
+A sample `lab4_input.txt` is included.
 
 ---
 
-### 9. Tcl Logic Gate Simulator
+### 5. Tcl Logic Gate Simulator
 
 This program simulates basic digital logic gates:
 
@@ -189,7 +189,7 @@ The original experiment explicitly targets these six logic gates and Tcl data st
 Run:
 
 ```bash
-cd 09-logic-gate-simulator
+cd 05-logic-gate-simulator
 tclsh logic_gate_simulator.tcl
 ```
 
@@ -234,18 +234,14 @@ tclsh logic_gate_simulator.tcl
 - Logic verification
 - EDA scripting concepts
 
-## Improvements Made
-
-The original lab programs were cleaned before being placed in this repository.
-
-### Experiment 5
+### Experiment 1
 
 - Added reusable numeric-input procedure
 - Added validation for core area
 - Used safer `expr {...}` syntax
 - Improved output formatting
 
-### Experiment 6
+### Experiment 2
 
 - Added default values for missing metrics
 - Added file-open error handling
@@ -253,7 +249,7 @@ The original lab programs were cleaned before being placed in this repository.
 - Added explicit WNS validation
 - Improved report formatting
 
-### Experiment 7
+### Experiment 3
 
 - Fixed division-by-zero handling
 - Added invalid-input validation
@@ -261,7 +257,7 @@ The original lab programs were cleaned before being placed in this repository.
 - Improved GUI layout
 - Changed the window title to a descriptive name
 
-### Experiment 8
+### Experiment 4
 
 - Corrected floating-point regular expressions
 - Added default values
@@ -269,7 +265,7 @@ The original lab programs were cleaned before being placed in this repository.
 - Improved report formatting
 - Added explicit power and timing checks
 
-### Experiment 9
+### Experiment 5
 
 - Added binary-input validation
 - Added support for the single-input NOT gate
