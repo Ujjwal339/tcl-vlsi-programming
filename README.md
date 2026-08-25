@@ -2,7 +2,7 @@
 
 A collection of **Tcl/Tk programming experiments** developed around VLSI physical design, EDA report automation, semiconductor design metrics, and digital logic.
 
-The repository contains Experiments **5 through 9**, covering chip utilization, report parsing, Tcl/Tk GUI programming, regular expressions, and logic-gate simulation.
+The repository contains covering chip utilization, report parsing, Tcl/Tk GUI programming, regular expressions, and logic-gate simulation.
 
 ## Repository Structure
 
